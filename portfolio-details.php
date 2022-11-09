@@ -1,3 +1,5 @@
+<?php include 'include/config.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,6 +39,21 @@
 
 <body>
 
+  <?php
+
+  if (isset($_GET['id']))
+    $id = $_GET['id'];
+  $sql = "SELECT * FROM `portfolio` WHERE `portfolio`.`id`=$id";
+  $result = mysqli_query($con, $sql);
+  $data = mysqli_fetch_assoc($result);
+
+  $category = $data['category'];
+  $category_sql = "SELECT * FROM `category` WHERE `category`.`id`=$category";
+  $category_result = mysqli_query($con, $category_sql);
+  $category_data = mysqli_fetch_assoc($category_result);
+
+  ?>
+
   <main id="main">
 
     <!-- ======= Portfolio Details ======= -->
@@ -50,7 +67,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div>
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="<?= $data['image'] ?>" alt="">
                 </div>
 
               </div>
@@ -60,16 +77,16 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
+            <h3><?= $data['title'] ?></h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <li><strong>Category</strong> <?php echo " : " . $category_data['name'] ?></li>
+              <li><strong>Client</strong><?php echo " : " . $data['client'] ?></li>
+              <li><strong>Project date</strong><?php echo " : " . date('D M Y', strtotime($data['project_date']))  ?></li>
+              <li><strong>Project URL</strong>: <a href="#"><?php echo " : " . $data['url'] ?></a></li>
             </ul>
 
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              <?= $data['text'] ?>
             </p>
           </div>
 
@@ -85,7 +102,7 @@
     <!-- You can delete the links only if you purchased the pro version. -->
     <!-- Licensing information: https://bootstrapmade.com/license/ -->
     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    Designed by <a href="https://mohdarshad86.github.io//" target="blank">Mohd Arshad</a>
   </div>
 
   <!-- Vendor JS Files -->
