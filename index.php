@@ -305,11 +305,11 @@ $data = mysqli_fetch_assoc($result);
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
             <h4>Mohd Arshad</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <p><em>Innovative and deadline-driven Web Developer with a of experience designing and developing user-centered mobile responsive website, page and Applications</em></p>
             <p>
             <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
+              <li>Bareilly, UP, India</li>
+              <li>+91 88818-21692</li>
               <li>mohdarshad8668@gmail.com</li>
             </ul>
             </p>
@@ -320,27 +320,27 @@ $data = mysqli_fetch_assoc($result);
             <h4>Bachelor of Technology &amp; Web development</h4>
             <h5>2017 - 2021</h5>
             <p><em>Kamla Nehru Institute of Technology, Sultanpur, UP</em></p>
-            <p>I have completed my graduation from KNIT Sultanpur</p>
+            <p>I have completed my graduation from KNIT Sultanpur.</p>
           </div>
           <div class="resume-item">
             <h4>SSC &amp; Mathematics</h4>
             <h5>2012 - 2014</h5>
             <p><em>HDB MEMO IC, Shishgarh, Bly</em></p>
-            <p>Senior Secondary was a bit challenging year for me, I have to preapre for entrance Exams and School simultaneously</p>
+            <p>Senior Secondary was a bit challenging year for me because I have to preapre for my entrance Exams and School simultaneously</p>
           </div>
         </div>
         <div class="col-lg-6">
           <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            <h4>Java Developer</h4>
+            <h4>Java Developer Intern</h4>
             <h5>Sept 2022 - Oct 2022</h5>
             <p><em>Nagpur, Maharashtra, India </em></p>
             <p>
             <ul>
-              <li>Lead in the design, Web development, and implementation of the php, layout, and production communication materials</li>
+              <li>Lead in the design, Web development, and implementation of the PHP, JavaScript and production communication materials</li>
               <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
               <li>Supervise the assessment of all Web Development materials in order to ensure quality and accuracy of the design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              <li>Contributed to Women Education, Healthcare and Development</li>
             </ul>
             </p>
           </div>
@@ -350,7 +350,7 @@ $data = mysqli_fetch_assoc($result);
             <p><em>KNIT Sultanpur, India</em></p>
             <p>
             <ul>
-              <li>I developed an mobile responsive online game website named Tale of Crypton.</li>
+              <li>I have developed an mobile responsive online game website named Tale of Crypton.</li>
               <li>Managed up to 5 projects or tasks at a given time while under pressure of my studies</li>
               <li>Also responsible for hacking and threat prevention</li>
               <li>Created 4+ design presentations and proposals a month for ISTE.</li>
